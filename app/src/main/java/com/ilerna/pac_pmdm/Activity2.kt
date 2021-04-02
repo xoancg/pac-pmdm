@@ -26,7 +26,7 @@ class Activity2 : AppCompatActivity() {
         Toast.makeText(this, "Estás en Activity 2", Toast.LENGTH_SHORT).show()
 
         // Botón Crear tabla
-        val btnCreateTable = findViewById<Button>(R.id.btnCreateTable)
+        val btnCreateTable = findViewById<Button>(R.id.btnCamera)
         btnCreateTable.setOnClickListener{
 
         }
@@ -51,7 +51,7 @@ class Activity2 : AppCompatActivity() {
         }
 
         // Botón volver a Activity1
-        val btnBack = findViewById<Button>(R.id.btnBackA2toA1)
+        val btnBack = findViewById<Button>(R.id.btnBacktoA1)
         btnBack.setOnClickListener {
             //val intent = Intent(this, Activity1::class.java)
             finish()

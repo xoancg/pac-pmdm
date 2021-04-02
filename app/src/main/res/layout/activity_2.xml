@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/btnCreateTable"
+            android:id="@+id/btnCamera"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -58,7 +58,7 @@
             app:layout_constraintTop_toBottomOf="@+id/btnInsertData" />
 
         <Button
-            android:id="@+id/btnBackA2toA1"
+            android:id="@+id/btnBacktoA1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
