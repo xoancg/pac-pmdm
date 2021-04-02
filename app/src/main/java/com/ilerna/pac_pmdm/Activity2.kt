@@ -11,16 +11,14 @@ import android.widget.Toast
 var dbHandler: DatabaseHandler?= null
 
 class Activity2 : AppCompatActivity() {
-
-//    var dbHandler: DatabaseHandler?= null
+    var tablaCreada: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_2)
 
-        // Init DB
-        dbHandler = DatabaseHandler(this)
+
 
         // Mensaje indicando que estamos en la Activity 2
         Toast.makeText(this, "Estás en Activity 2", Toast.LENGTH_SHORT).show()
@@ -28,7 +26,10 @@ class Activity2 : AppCompatActivity() {
         // Botón Crear tabla
         val btnCreateTable = findViewById<Button>(R.id.btnCamera)
         btnCreateTable.setOnClickListener{
-
+            // Init DB
+            dbHandler = DatabaseHandler(this)
+            tablaCreada = true
+            Toast.makeText(this, "Tabla creada. Ya puedes insertar datos", Toast.LENGTH_SHORT).show()
         }
 
 
@@ -36,8 +37,13 @@ class Activity2 : AppCompatActivity() {
         val btnInsertData = findViewById<Button>(R.id.btnInsertData)
         btnInsertData.setOnClickListener(){
             val a2InsertData = Intent(this, Activity2InsertData::class.java)
-            // Iniciamos la activity
-            startActivity(a2InsertData)
+            if (tablaCreada == false) {
+                Toast.makeText(this, "Debes crear la tabla antes de insertar datos!", Toast.LENGTH_SHORT).show()
+            } else {
+                // Iniciamos la activity
+                startActivity(a2InsertData)
+            }
+
         }
 
         // Botón consultar datos
