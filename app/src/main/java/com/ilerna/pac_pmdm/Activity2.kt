@@ -38,7 +38,7 @@ class Activity2 : AppCompatActivity() {
         btnInsertData.setOnClickListener(){
             val a2InsertData = Intent(this, Activity2InsertData::class.java)
             if (tablaCreada == false) {
-                Toast.makeText(this, "Debes crear la tabla antes de insertar datos!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "¡Debes crear la tabla antes de insertar datos!", Toast.LENGTH_SHORT).show()
             } else {
                 // Iniciamos la activity
                 startActivity(a2InsertData)
@@ -50,16 +50,20 @@ class Activity2 : AppCompatActivity() {
         val btnSelectData = findViewById<Button>(R.id.btnSelectData)
         btnSelectData.setOnClickListener() {
 
-            // String
-            val data = dbHandler?.getAllContacts()
-            val tvSelectData = findViewById<TextView>(R.id.tvSelectData)
-            tvSelectData.setText(data?.joinToString("\n"))
+            if (tablaCreada == false) {
+                Toast.makeText(this, "¡Debes crear la tabla antes de consultar datos!", Toast.LENGTH_SHORT).show()
+            } else {
+
+                // String
+                val data = dbHandler?.getAllContacts()
+                val tvSelectData = findViewById<TextView>(R.id.tvSelectData)
+                tvSelectData.setText(data?.joinToString("\n"))
+            }
         }
 
         // Botón volver a Activity1
         val btnBack = findViewById<Button>(R.id.btnBacktoA1)
         btnBack.setOnClickListener {
-            //val intent = Intent(this, Activity1::class.java)
             finish()
         }
     }

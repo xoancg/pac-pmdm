@@ -16,7 +16,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="100dp"
-            android:layout_height="300dp"
+            android:layout_height="50dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:layout_margin="5dp"
@@ -25,13 +25,13 @@
             <ImageView
                 android:id="@+id/image1"
                 android:layout_width="wrap_content"
-                android:layout_height="300dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:src="@drawable/image1" />
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:layout_width="100dp"
-            android:layout_height="300dp"
+            android:layout_height="200dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:layout_margin="5dp"
@@ -40,13 +40,13 @@
             <ImageView
                 android:id="@+id/image2"
                 android:layout_width="wrap_content"
-                android:layout_height="300dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:src="@drawable/image2" />
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:layout_width="100dp"
-            android:layout_height="300dp"
+            android:layout_height="150dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:layout_margin="5dp"
@@ -55,14 +55,14 @@
             <ImageView
                 android:id="@+id/image3"
                 android:layout_width="wrap_content"
-                android:layout_height="300dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:src="@drawable/image3" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="100dp"
-            android:layout_height="300dp"
+            android:layout_height="200dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:layout_margin="5dp"
@@ -71,7 +71,7 @@
             <ImageView
                 android:id="@+id/image4"
                 android:layout_width="wrap_content"
-                android:layout_height="300dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:src="@drawable/image4" />
         </androidx.cardview.widget.CardView>
@@ -86,13 +86,13 @@
             <ImageView
                 android:id="@+id/image5"
                 android:layout_width="wrap_content"
-                android:layout_height="300dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:src="@drawable/image5" />
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:layout_width="100dp"
-            android:layout_height="300dp"
+            android:layout_height="200dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:layout_margin="5dp"
@@ -101,7 +101,7 @@
             <ImageView
                 android:id="@+id/image6"
                 android:layout_width="wrap_content"
-                android:layout_height="300dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:src="@drawable/image6" />
         </androidx.cardview.widget.CardView>

@@ -15,7 +15,6 @@ import androidx.core.content.ContextCompat
 
 class Activity3 : AppCompatActivity() {
     var photo: Uri? = null
-    // private val REQUEST_GALLERY = 1001
     private val REQUEST_CAMERA = 1002
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -21,10 +21,10 @@ class Activity1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_1)
 
-        // Init mediaPlayer
+        // Iniciar mediaPlayer
         controlPlayer(audio[0])
 
-        // Activity2 button
+        // Botón Activity2
         val btnGotoA2 = findViewById<Button>(R.id.btnGotoA2)
         btnGotoA2.setOnClickListener(){
             val activity2 = Intent(this, Activity2::class.java)
@@ -32,25 +32,25 @@ class Activity1 : AppCompatActivity() {
             startActivity(activity2)
         }
 
-        // Activity3 button
+        // Botón Activity3
         val btnGotoA3 = findViewById<Button>(R.id.btnGotoA3)
         btnGotoA3.setOnClickListener(){
             val activity3 = Intent(this, Activity3::class.java)
-            // Start Activity3
+            // Iniciar Activity3
             startActivity(activity3)
         }
 
-        // Activity4 button
+        // Botón Activity4
         val btnGotoA4 = findViewById<Button>(R.id.btnGotoA4)
         btnGotoA4.setOnClickListener(){
             val activity4 = Intent(this, Activity4::class.java)
-            // Start Activity4
+            // Iniciar Activity4
             startActivity(activity4)
         }
     }
 
     private fun controlPlayer(id: Int) {
-        // Play button
+        // Botón Play
         val btnPlay = findViewById<FloatingActionButton>(R.id.btnPlay)
         btnPlay.setOnClickListener {
             if (mediaPlayer == null) {
@@ -64,11 +64,11 @@ class Activity1 : AppCompatActivity() {
             Log.d("Activity3", "Iniciado: ${mediaPlayer!!.currentPosition / 1000} segundos")
         }
 
-        // Stop button
+        // Botón Stop
         val btnStop = findViewById<FloatingActionButton>(R.id.btnStop)
         btnStop.setOnClickListener {
             if (mediaPlayer !== null) {
-                //Log.d("Activity3", "Detenido en: ${mediaPlayer!!.currentPosition / 1000} segundos")
+                Log.d("Activity3", "Detenido en: ${mediaPlayer!!.currentPosition / 1000} segundos")
                 mediaPlayer?.stop()
                 mediaPlayer?.reset()
                 mediaPlayer?.release()
