@@ -15,7 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pacpmdm"
         android:requestLegacyExternalStorage="true" >
-        <activity android:name=".Activity2InsertData" />
+        <activity
+            android:name=".Activity2InsertData"
+            android:label="@string/insertar_datos"
+            android:parentActivityName=".Activity2" />
         <activity
             android:name=".Activity4"
             android:label="Activity4"
